@@ -9,11 +9,35 @@
     <script src = "script.js"></script>
 </head>
 <body>
-    <h1>Robot Maker</h1>
-    <img src = "robot.jpg" img>
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider"></span>
-      </label>
+    <div class= "grid-container">
+        <h1>Robot Maker</h1>
+
+        <div><img id = "robot" src = "Images/Robot.png" img></div>
+
+        <div id = "powerType">
+        <h2>Power Type</h2>
+        <button id = "Hydro">Hydro</button>
+        <button id = "Solar">Solar</button>
+        <button id = "Nuclear">Nuclear</button>
+        </div>
+
+        <div id = "toggle">
+        <h2>Toggles</h2>
+        <p>Scanners <label class= "switch">
+            <input type= "checkbox">
+            <span class= "slider round"></span>
+        </label></p>
+        <p>Defensive System <label class= "switch">
+            <input type= "checkbox">
+            <span class= "slider round"></span>
+        </label></p>
+        </div>
+
+        <div id = "stats">
+        <h2>Stats</h2>
+        </div>
+
+        <button id = "finish">Finish</button>
+    </div>
 </body>
 </html>
