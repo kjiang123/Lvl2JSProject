@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" style="font-family: Gill Sans (sans-serif);">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -16,15 +16,17 @@
 
         <div id = "powerType">
         <h2>Power Type</h2>
-        <button id = "Hydro">Hydro</button>
-        <button id = "Solar">Solar</button>
-        <button id = "Nuclear">Nuclear</button>
+        <p>Current Power Type: <span id = "type">No Power Installed</span></p>
+        <button id = "hydro" onclick="swapHydro()">Hydro</button>
+        <button id = "solar" onclick="swapSolar()">Solar</button>
+        <button id = "nuclear" onclick="swapNuclear()">Nuclear</button>
         </div>
 
         <div id = "toggle">
         <h2>Toggles</h2>
-        <p>Scanners <label class= "switch">
-            <input type= "checkbox">
+        <p>Scanners 
+            <label class= "switch">
+            <input id = "scanner" type= "checkbox">
             <span class= "slider round"></span>
         </label></p>
         <p>Defensive System <label class= "switch">
