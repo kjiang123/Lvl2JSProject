@@ -33,7 +33,7 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: rgb(221, 57, 57);
+    background-color: rgb(243, 242, 242);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -43,7 +43,7 @@
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px rgb(65, 207, 84);
+    box-shadow: 0 0 1px rgb(221, 57, 57);
   }
   
   input:checked + .slider:before {
@@ -100,58 +100,93 @@ h1{
 }
 
 img{
-  width: 150%;
-  object-position: center;
+  width: 100%;
+  object-position: right;
+}
+
+/* BUTTONS */
+.button
+{
+  cursor: pointer;
+
+  float: left;
+  margin-right: 20px;
+
+  border-width: 4px;
+  border-radius: 10px;
+
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 6px #999;
+  padding: 5px;
 }
 
 #hydro
 {
-  padding: 4px 12px;
-  margin-right: 10px;
-
   color: white;
-  font-size: 18px;
-  font-weight: bold;
 
-  border-width: 8px;
-  border-radius: 20px;
   background-color:rgb(67, 145, 197);
   border-color:rgb(57, 91, 165);
 }
 
+#hydro:hover
+{
+  background-color: rgb(66, 60, 124);
+}
+
+#hydro:active 
+{
+  background-color: rgb(66, 60, 124);
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
 #solar
 {
-  padding: 4px 12px;
-  margin-right: 10px;
-
   color: white;
-  font-size: 18px;
-  font-weight: bold;
 
-  border-width: 8px;
-  border-radius: 20px;
   background-color:rgb(223, 94, 43);
   border-color:rgb(194, 28, 28);
 }
 
+#solar:hover
+{
+  background-color: rgb(94, 17, 17);
+}
+
+#solar:active 
+{
+  background-color: rgb(94, 17, 17);
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
 #nuclear
 {
-  padding: 4px 12px;
-  margin-right: 10px;
-
   color: white;
-  font-size: 18px;
-  font-weight: bold;
 
-  border-width: 8px;
-  border-radius: 20px;
   background-color:rgb(105, 223, 82);
   border-color:rgb(36, 141, 67);
+}
+
+#nuclear:hover
+{
+  background-color: rgb(17, 92, 57);
+}
+
+#nuclear:active 
+{
+  background-color: rgb(17, 92, 57);
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }
 
 div
 {
   background-color:rgb(168, 183, 224);
-  border: 5px rgb(117, 102, 197);
+  border-style: solid;
+  border-width: 5px;
   border-radius: 5px;
+  border-color: rgb(117, 102, 197);
 }
+

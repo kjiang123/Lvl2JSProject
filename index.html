@@ -16,7 +16,7 @@
 
         <div id = "powerType">
         <h2>Power Type</h2>
-        <p>Current Power Type: <span id = "type">No Power Installed</span></p>
+        <p>Current Power Type: <span id = "typeText"></span></p>
         <button id = "hydro" onclick="swapHydro()">Hydro</button>
         <button id = "solar" onclick="swapSolar()">Solar</button>
         <button id = "nuclear" onclick="swapNuclear()">Nuclear</button>
@@ -26,17 +26,21 @@
         <h2>Toggles</h2>
         <p>Scanners 
             <label class= "switch">
-            <input id = "scanner" type= "checkbox">
+            <input id = "scanner" type= "checkbox" onchange="scannerON()">
             <span class= "slider round"></span>
         </label></p>
-        <p>Defensive System <label class= "switch">
-            <input type= "checkbox">
+        <p>Defensive System 
+            <label class= "switch">
+            <input id = "defSystem" type= "checkbox" onchange="defSystemON()">
             <span class= "slider round"></span>
         </label></p>
         </div>
 
         <div id = "stats">
         <h2>Stats</h2>
+        <p>Power: </p>
+        <p>Speed: <span id = #speed></span></p>
+        <p>Integrity: <span id = #integrity></span></p>
         </div>
 
         <button id = "finish">Finish</button>
