@@ -66,6 +66,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: .5fr repeat(3, 1fr);
+
+  background: rgb(84, 71, 151);
 }
 
 h1{
@@ -101,43 +103,49 @@ h1{
 
 img{
   width: 100%;
-  object-position: right;
+  object-position: center;
+}
+
+#category
+{
+  font-size: 36px;
+}
+
+#text
+{
+  font-size: 24px;
 }
 
 /* BUTTONS */
-.button
-{
-  cursor: pointer;
-
-  float: left;
-  margin-right: 20px;
-
-  border-width: 4px;
-  border-radius: 10px;
-
-  font-size: 25px;
-  font-weight: bold;
-  box-shadow: 0 6px #999;
-  padding: 5px;
-}
-
 #hydro
 {
   color: white;
 
   background-color:rgb(67, 145, 197);
   border-color:rgb(57, 91, 165);
+
+  box-shadow: 0 6px #7a7a7a;
+
+  border-width: 6px;
+  border-radius: 10px;
+  padding: 5px;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  width: 120px;
+  height: 60px;
 }
 
 #hydro:hover
 {
-  background-color: rgb(66, 60, 124);
+  background-color: rgb(75, 138, 220);
 }
 
 #hydro:active 
 {
-  background-color: rgb(66, 60, 124);
-  box-shadow: 0 2px #666;
+  background-color: rgb(59, 56, 142);
+  box-shadow: 0 3px #555555;
   transform: translateY(4px);
 }
 
@@ -147,17 +155,29 @@ img{
 
   background-color:rgb(223, 94, 43);
   border-color:rgb(194, 28, 28);
+
+  box-shadow: 0 6px #7a7a7a;
+
+  border-width: 6px;
+  border-radius: 10px;
+  padding: 5px;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  width: 120px;
+  height: 60px;
 }
 
 #solar:hover
 {
-  background-color: rgb(94, 17, 17);
+  background-color: rgb(236, 108, 28);
 }
 
 #solar:active 
 {
-  background-color: rgb(94, 17, 17);
-  box-shadow: 0 2px #666;
+  background-color: rgb(158, 24, 24);
+  box-shadow: 0 3px #555555;
   transform: translateY(4px);
 }
 
@@ -167,26 +187,96 @@ img{
 
   background-color:rgb(105, 223, 82);
   border-color:rgb(36, 141, 67);
+
+  box-shadow: 0 6px #7a7a7a;
+
+  border-width: 6px;
+  border-radius: 10px;
+  padding: 5px;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  width: 120px;
+  height: 60px;
 }
 
 #nuclear:hover
 {
-  background-color: rgb(17, 92, 57);
+  background-color: rgb(116, 221, 54);
 }
 
 #nuclear:active 
 {
-  background-color: rgb(17, 92, 57);
-  box-shadow: 0 2px #666;
+  background-color: rgb(18, 118, 78);
+  box-shadow: 0 3px #555555;
   transform: translateY(4px);
 }
 
-div
+#finish
 {
-  background-color:rgb(168, 183, 224);
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 5px;
-  border-color: rgb(117, 102, 197);
+  color: white;
+
+  background-color:rgb(222, 216, 93);
+  border-color:rgb(212, 179, 45);
+
+  box-shadow: 0 6px #7a7a7a;
+
+  border-width: 6px;
+  border-radius: 10px;
+  padding: 5px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  width: 120px;
+  height: 60px;
 }
 
+#finish:hover
+{
+  background-color: rgb(177, 136, 55);
+}
+
+#finish:active 
+{
+  background-color: rgb(177, 136, 55);
+  box-shadow: 0 3px #555555;
+  transform: translateY(4px);
+}
+
+/* DIVIDERS */
+div
+{
+  background:rgb(110, 134, 199);
+  border-color: rgb(43, 16, 54);
+
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 10px;
+  
+  text-align: center;
+  position: relative;
+
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#powerType
+{
+  width: 450px;
+  height: 275px;
+}
+
+#toggle
+{
+  width: 450px;
+  height: 275px;
+}
+
+#stats
+{
+  width: 450px;
+  height: 275px;
+}

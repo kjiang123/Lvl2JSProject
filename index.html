@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" style="font-family: Gill Sans (sans-serif);">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" type = "text/css" href = "style.css">
     <script src = "script.js"></script>
 </head>
-<body>
-    <div class= "grid-container">
-        <h1>Robot Maker</h1>
+<body style = "font-family:Verdana; color: rgb(34, 21, 58); font-weight: bold;">
+    <span class= "grid-container">
+        <h1 style = "font-size: 52px; text-align: center">Robot Maker</h1>
 
-        <div><img id = "robot" src = "Images/Robot.png" img></div>
+        <span id = "robotBox"><img id = "robot" src = "Images/Robot.png" img></span>
 
         <div id = "powerType">
-        <h2>Power Type</h2>
-        <p>Current Power Type: <span id = "typeText"></span></p>
+        <h2 id = "category">Power Type</h2>
+        <p id = "text">Current Power Type: <span id = "typeText">No Power Selected</span></p>
         <button id = "hydro" onclick="swapHydro()">Hydro</button>
         <button id = "solar" onclick="swapSolar()">Solar</button>
         <button id = "nuclear" onclick="swapNuclear()">Nuclear</button>
         </div>
 
         <div id = "toggle">
-        <h2>Toggles</h2>
-        <p>Scanners 
+        <h2 id = "category">Toggles</h2>
+        <p id = "text">Scanners 
             <label class= "switch">
             <input id = "scanner" type= "checkbox" onchange="scannerON()">
             <span class= "slider round"></span>
         </label></p>
-        <p>Defensive System 
+        <p id = "text">Defensive System 
             <label class= "switch">
             <input id = "defSystem" type= "checkbox" onchange="defSystemON()">
             <span class= "slider round"></span>
@@ -37,13 +37,13 @@
         </div>
 
         <div id = "stats">
-        <h2>Stats</h2>
-        <p>Power: </p>
-        <p>Speed: <span id = #speed></span></p>
-        <p>Integrity: <span id = #integrity></span></p>
+        <h2 id = "category">Stats</h2>
+        <p id = "text">Power: </p>
+        <p id = "text">Speed: <span id = #speed></span></p>
+        <p id = "text">Integrity: <span id = #integrity></span></p>
         </div>
 
         <button id = "finish">Finish</button>
-    </div>
+    </span>
 </body>
 </html>
