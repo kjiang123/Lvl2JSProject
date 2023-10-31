@@ -65,9 +65,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: .5fr repeat(3, 1fr);
-
-  background: rgb(84, 71, 151);
+  grid-template-rows: 150px repeat(3, 300px) 50px;
 }
 
 h1{
@@ -90,20 +88,20 @@ h1{
   grid-row: 4;
 }
 
-#robot{
+#robotBox{
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row: span 2;
 }
 
-#finish{
+#finishButton
+{
   grid-column-start: 2;
   grid-row: 4;
 }
 
 img{
   width: 100%;
-  object-position: center;
 }
 
 #category
@@ -217,7 +215,7 @@ img{
 {
   color: white;
 
-  background-color:rgb(222, 216, 93);
+  background-color:rgb(215, 205, 90);
   border-color:rgb(212, 179, 45);
 
   box-shadow: 0 6px #7a7a7a;
@@ -226,21 +224,23 @@ img{
   border-radius: 10px;
   padding: 5px;
 
-  font-size: 20px;
+  font-size: 72px;
   font-weight: bold;
 
-  width: 120px;
-  height: 60px;
+  width: 400px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
 #finish:hover
 {
-  background-color: rgb(177, 136, 55);
+  background-color: rgb(224, 219, 107);
 }
 
 #finish:active 
 {
-  background-color: rgb(177, 136, 55);
+  background-color: rgb(177, 144, 80);
   box-shadow: 0 3px #555555;
   transform: translateY(4px);
 }
@@ -257,26 +257,84 @@ div
   
   text-align: center;
   position: relative;
-
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 #powerType
 {
-  width: 450px;
+  width: 600px;
   height: 275px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #toggle
 {
-  width: 450px;
+  width: 600px;
   height: 275px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #stats
 {
-  width: 450px;
-  height: 275px;
+  text-align: left;
+
+  width: 600px;
+  height: 430px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#robotBox
+{
+  width: 600px;
+  height: 570px;
+  margin-right: 150px;
+}
+
+#finishButton
+{
+  object-position: center;
+  border-width: 0px;
+  width: 0px;
+  height: 0px;
+  margin-left: 20px;
+}
+
+/* SLIDER */
+.slidecontainer {
+  width: 95%;
+}
+
+.rSlider {
+  -webkit-appearance: none;
+  width: 95%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 15px;
+}
+
+.rSlider:hover {
+  opacity: 1;
+}
+
+.rSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(215, 205, 90);
+  cursor: pointer;
+}
+
+.rSlider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: rgb(215, 205, 90);
+  cursor: pointer;
 }

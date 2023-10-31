@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "background: rgb(84, 71, 151)">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,9 @@
 </head>
 <body style = "font-family:Verdana; color: rgb(34, 21, 58); font-weight: bold;">
     <span class= "grid-container">
-        <h1 style = "font-size: 52px; text-align: center">Robot Maker</h1>
+        <h1>Robot Maker</h1>
 
-        <span id = "robotBox"><img id = "robot" src = "Images/Robot.png" img></span>
+        <div id = "robotBox"><img id = "robot" src = "Images/Robot.png" img></div>
 
         <div id = "powerType">
         <h2 id = "category">Power Type</h2>
@@ -36,14 +36,18 @@
         </label></p>
         </div>
 
+        <!-- Change Max Values for the sliders-->
         <div id = "stats">
-        <h2 id = "category">Stats</h2>
-        <p id = "text">Power: </p>
-        <p id = "text">Speed: <span id = #speed></span></p>
-        <p id = "text">Integrity: <span id = #integrity></span></p>
+        <h2 id = "category" style = "text-align: center">Stats</h2>
+        <p id = "text">Power: <span id = powerValue>0</span></p>
+        <input type="range" min="0" max="20" value="0" class="rSlider" id="power" onchange="powerChange()">
+        <p id = "text">Speed: <span id = speedValue>0</span></p>
+        <input type="range" min="0" max="20" value="0" class="rSlider" id="speed" onchange="speedChange()">
+        <p id = "text">Integrity: <span id = integrityValue>0</span></p>
+        <input type="range" min="0" max="20" value="0" class="rSlider" id="integrity" onchange="integrityChange()">
         </div>
 
-        <button id = "finish">Finish</button>
+        <div id = "finishButton"><button id = "finish">Finish</button></div>
     </span>
 </body>
 </html>

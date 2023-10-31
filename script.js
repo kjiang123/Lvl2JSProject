@@ -51,15 +51,35 @@ function defSystemON(){
     } 
 }
 
-// function powerChange()
-// {
-// var slider = document.getElementById("power");
-// var output = document.getElementById("powerValue");
-// output.innerHTML = slider.value;
-// slider.oninput = function() {
-//   output.innerHTML = this.value;
-//}
-// }
+function powerChange()
+{
+    var rSlider = document.getElementById("power");
+    var output = document.getElementById("powerValue");
+    output.innerHTML = rSlider.value;
+    rSlider.oninput = function() {
+    output.innerHTML = this.value;
+    }
+}
+
+function speedChange()
+{
+    var rSlider = document.getElementById("speed");
+    var output = document.getElementById("speedValue");
+    output.innerHTML = rSlider.value;
+    rSlider.oninput = function() {
+    output.innerHTML = this.value;
+    }
+}
+
+function integrityChange()
+{
+    var rSlider = document.getElementById("integrity");
+    var output = document.getElementById("integrityValue");
+    output.innerHTML = rSlider.value;
+    rSlider.oninput = function() {
+    output.innerHTML = this.value;
+    }
+}
 
 
 
