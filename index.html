@@ -40,11 +40,11 @@
         <div id = "stats">
         <h2 id = "category" style = "text-align: center">Stats</h2>
         <p id = "text">Power: <span id = powerValue>0</span></p>
-        <input type="range" min="0" max="20" value="0" class="rSlider" id="power" onchange="powerChange()">
+        <input type="range" min="0" max="20" value="0" class="rSlider" id="power" onchange="powerChange()" disabled>
         <p id = "text">Speed: <span id = speedValue>0</span></p>
-        <input type="range" min="0" max="20" value="0" class="rSlider" id="speed" onchange="speedChange()">
+        <input type="range" min="0" max="20" value="0" class="rSlider" id="speed" onchange="speedChange()" disabled>
         <p id = "text">Integrity: <span id = integrityValue>0</span></p>
-        <input type="range" min="0" max="20" value="0" class="rSlider" id="integrity" onchange="integrityChange()">
+        <input type="range" min="0" max="20" value="0" class="rSlider" id="integrity" onchange="integrityChange()" disabled>
         </div>
 
         <div id = "finishButton"><button id = "finish" onclick="finalize()">Finish</button></div>

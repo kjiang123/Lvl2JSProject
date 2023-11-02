@@ -10,6 +10,21 @@ function swapHydro(){
     document.getElementById("scanner").disabled=false; 
     document.getElementById("defSystem").checked = false;
     document.getElementById("scanner").checked=false; 
+    document.getElementById("power").disabled = false;
+    document.getElementById("speed").disabled = false;
+    document.getElementById("integrity").disabled = false;
+
+    document.getElementById("power").max = 8;
+    document.getElementById("speed").max = 12;
+    document.getElementById("integrity").max = 10;
+
+    document.getElementById("power").value = 0;
+    document.getElementById("speed").value = 0;
+    document.getElementById("integrity").value = 0;
+
+    document.getElementById("powerValue").innerHTML = 0;
+    document.getElementById("speedValue").innerHTML = 0;
+    document.getElementById("integrityValue").innerHTML = 0;
 }
 
 function swapSolar(){
@@ -21,6 +36,21 @@ function swapSolar(){
     document.getElementById("scanner").disabled=false; 
     document.getElementById("defSystem").checked = false;
     document.getElementById("scanner").checked = false;
+    document.getElementById("power").disabled = false;
+    document.getElementById("speed").disabled = false;
+    document.getElementById("integrity").disabled = false;
+
+    document.getElementById("power").max = 10;
+    document.getElementById("speed").max = 10;
+    document.getElementById("integrity").max = 10;
+
+    document.getElementById("power").value = 0;
+    document.getElementById("speed").value = 0;
+    document.getElementById("integrity").value = 0;
+
+    document.getElementById("powerValue").innerHTML = 0;
+    document.getElementById("speedValue").innerHTML = 0;
+    document.getElementById("integrityValue").innerHTML = 0;
 }
 
 function swapNuclear(){
@@ -32,6 +62,21 @@ function swapNuclear(){
     document.getElementById("scanner").disabled=false; 
     document.getElementById("defSystem").checked = false;
     document.getElementById("scanner").checked = false;
+    document.getElementById("power").disabled = false;
+    document.getElementById("speed").disabled = false;
+    document.getElementById("integrity").disabled = false;
+
+    document.getElementById("power").max = 12;
+    document.getElementById("speed").max = 14;
+    document.getElementById("integrity").max = 4;
+
+    document.getElementById("power").value = 0;
+    document.getElementById("speed").value = 0;
+    document.getElementById("integrity").value = 0;
+
+    document.getElementById("powerValue").innerHTML = 0;
+    document.getElementById("speedValue").innerHTML = 0;
+    document.getElementById("integrityValue").innerHTML = 0;
 }
 
 function scannerON(){
@@ -102,35 +147,4 @@ function finalize(){
     document.getElementById("power").disabled = true;
     document.getElementById("speed").disabled = true;
     document.getElementById("integrity").disabled = true;
-}
-
-function findMaxPower(){
-    if (type == "Hydro"){
-        return 8;
-    } else if (type == "Solar"){
-        return 10;
-    } else {
-        return 12;
-    }
-    
-}
-
-function findMaxSpeed(){
-    if (type == "Hydro"){
-        return 12;
-    } else if (type == "Solar"){
-        return 10;
-    } else {
-        return 14;
-    }
-}
-
-function findMaxSI(){
-    if (type == "Hydro"){
-        return 10;
-    } else if (type == "Solar"){
-        return 10;
-    } else {
-        return 4;
-    }
 }
