@@ -100,8 +100,13 @@ h1{
   grid-row: 4;
 }
 
-img{
-  width: 100%;
+img
+{
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  left: 0px;
+  /* width: 100%; */
 }
 
 #category
@@ -122,7 +127,7 @@ img{
   background-color:rgb(67, 145, 197);
   border-color:rgb(57, 91, 165);
 
-  box-shadow: 0 6px #7a7a7a;
+  box-shadow: 0 6px rgb(84, 71, 151);
 
   border-width: 6px;
   border-radius: 10px;
@@ -143,7 +148,7 @@ img{
 #hydro:active 
 {
   background-color: rgb(59, 56, 142);
-  box-shadow: 0 3px #555555;
+  box-shadow: 0 3px rgb(43, 16, 54);
   transform: translateY(4px);
 }
 
@@ -154,7 +159,7 @@ img{
   background-color:rgb(223, 94, 43);
   border-color:rgb(194, 28, 28);
 
-  box-shadow: 0 6px #7a7a7a;
+  box-shadow: 0 6px rgb(84, 71, 151);
 
   border-width: 6px;
   border-radius: 10px;
@@ -175,7 +180,7 @@ img{
 #solar:active 
 {
   background-color: rgb(158, 24, 24);
-  box-shadow: 0 3px #555555;
+  box-shadow: 0 3px rgb(43, 16, 54);
   transform: translateY(4px);
 }
 
@@ -186,7 +191,7 @@ img{
   background-color:rgb(105, 223, 82);
   border-color:rgb(36, 141, 67);
 
-  box-shadow: 0 6px #7a7a7a;
+  box-shadow: 0 6px rgb(84, 71, 151);
 
   border-width: 6px;
   border-radius: 10px;
@@ -207,7 +212,7 @@ img{
 #nuclear:active 
 {
   background-color: rgb(18, 118, 78);
-  box-shadow: 0 3px #555555;
+  box-shadow: 0 3px rgb(43, 16, 54);
   transform: translateY(4px);
 }
 
@@ -218,7 +223,7 @@ img{
   background-color:rgb(215, 205, 90);
   border-color:rgb(212, 179, 45);
 
-  box-shadow: 0 6px #7a7a7a;
+  box-shadow: 0 6px rgb(43, 16, 54);
 
   border-width: 6px;
   border-radius: 10px;
@@ -241,7 +246,7 @@ img{
 #finish:active 
 {
   background-color: rgb(177, 144, 80);
-  box-shadow: 0 3px #555555;
+  box-shadow: 0 3px rgb(28, 8, 32);
   transform: translateY(4px);
 }
 
@@ -289,6 +294,10 @@ div
 
 #robotBox
 {
+  background-image: url("Images/Spotlight_Robot.png");
+  background-size: 600px 600px;
+
+  position: relative;
   width: 600px;
   height: 570px;
   margin-right: 150px;
