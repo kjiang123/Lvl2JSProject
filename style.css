@@ -64,40 +64,92 @@
 /* Grid */
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 700px 400px;
   grid-template-rows: 150px repeat(3, 300px) 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+body
+{
+  background: rgb(84, 71, 151);
+  font-family:Verdana; 
+  color: rgb(34, 21, 58); 
+  font-weight: bold;
 }
 
 h1{
-  grid-column: span 2;
+  font-size: 64px;
   text-align: center;
+  padding-left: 250px;
+
+  grid-column-start: 1;
+  grid-column: span 2;
+}
+
+/* DIVIDERS */
+div
+{
+  background:rgb(110, 134, 199);
+  border-color: rgb(43, 16, 54);
+
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 10px;
+  
+  text-align: center;
+  position: relative;
 }
 
 #powerType{
   grid-column: 1;
   grid-row: 2;
+
+  width: 600px;
+  height: 275px;
 }
 
 #toggle{
   grid-column: 1;
   grid-row: 3;
+
+  width: 600px;
+  height: 275px;
 }
 
 #stats{
   grid-column: 1;
   grid-row: 4;
+
+  text-align: left;
+
+  width: 600px;
+  height: 430px;
 }
 
 #robotBox{
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row: span 2;
+
+  background-image: url("Images/Spotlight_Robot.png");
+  background-size: 600px 600px;
+
+  position: relative;
+  width: 600px;
+  height: 570px;
 }
 
 #finishButton
 {
   grid-column-start: 2;
   grid-row: 4;
+
+  object-position: center;
+  border-width: 0px;
+  width: 0px;
+  height: 0px;
 }
 
 img
@@ -248,68 +300,6 @@ img
   background-color: rgb(177, 144, 80);
   box-shadow: 0 3px rgb(28, 8, 32);
   transform: translateY(4px);
-}
-
-/* DIVIDERS */
-div
-{
-  background:rgb(110, 134, 199);
-  border-color: rgb(43, 16, 54);
-
-  border-style: solid;
-  border-width: 6px;
-  border-radius: 10px;
-  
-  text-align: center;
-  position: relative;
-}
-
-#powerType
-{
-  width: 600px;
-  height: 275px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-#toggle
-{
-  width: 600px;
-  height: 275px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-#stats
-{
-  text-align: left;
-
-  width: 600px;
-  height: 430px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-#robotBox
-{
-  background-image: url("Images/Spotlight_Robot.png");
-  background-size: 600px 600px;
-
-  position: relative;
-  width: 600px;
-  height: 570px;
-  margin-right: 150px;
-}
-
-#finishButton
-{
-  object-position: center;
-  border-width: 0px;
-  width: 0px;
-  height: 0px;
-  margin-left: 20px;
 }
 
 /* SLIDER */
